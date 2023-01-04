@@ -1,3 +1,6 @@
+pwd
+
+exit
 yum install nginx -y
 systemctl enable nginx
 systemclt start nginx
