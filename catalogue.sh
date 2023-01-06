@@ -25,7 +25,7 @@ useradd roboshop &>>${LOG}
 if [ $? -eq 0 ]; then
   echo SUCCESS
 else
-  echo FAILURE
+  echo -e "\e[031mFAILURE\e[0m"
   echo "Refer Log file for more information, LOG - ${LOG}"
 exit
 fi
