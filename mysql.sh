@@ -7,7 +7,7 @@ fi
 
 
 print_head "Disable MySQL Default Module"
-dnf module disable mysql -y
+dnf module disable mysql -y &>>${LOG}
 status_check
 
 print_head "Copy MySQL Repo file"
