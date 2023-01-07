@@ -18,12 +18,12 @@ print_head "Install MySQL Server"
 yum install mysql-community-server -y  &>>${LOG}
 status_check
 
-print_head "Enable MongoDB"
-systemctl enable mongod &>>${LOG}
+print_head "Enable MySQL"
+systemctl enable mysqld &>>${LOG}
 status_check
 
-print_head "Start MongoDB"
-systemctl restart mongod &>>${LOG}
+print_head "Start MySQL"
+systemctl restart mysqld &>>${LOG}
 status_check
 
 print_head "Reset Default Database Password"
